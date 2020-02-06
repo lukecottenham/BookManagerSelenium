@@ -23,7 +23,7 @@ import com.bae.manager.selenium.pages.UpdateDeleteBooksPage;
 import com.bae.manager.selenium.pages.components.Form;
 import com.bae.manager.selenium.pages.components.Navbar;
 
-public class FrontEndTests {
+public class FrontEndTest {
 	
 	private final int port = 9090;
 	
@@ -53,7 +53,7 @@ public class FrontEndTests {
 	public void startup() throws Exception {
 		System.setProperty(Constants.PROPERTY, Constants.PATH);
 		ChromeOptions options = new ChromeOptions();
-//		options.setHeadless(true);
+		options.setHeadless(true);
 		this.driver = new ChromeDriver(options);	
 		this.driver.manage().window().setSize(new Dimension(1600, 700));
 		this.driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
