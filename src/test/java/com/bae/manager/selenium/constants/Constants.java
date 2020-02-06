@@ -4,7 +4,7 @@ public class Constants {
 	public static final String PATH = "chromedriver";
 	public static final String PROPERTY = "webdriver.chrome.driver";
 	
-	public static final String HOST = "3.11.81.76:";
+	public static final String HOST = "localhost:";
 	
 	public static final String INDEX = "/index.html";
 	
